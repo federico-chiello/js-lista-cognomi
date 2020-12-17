@@ -23,3 +23,9 @@ cognomi.sort();
 console.log(cognomi);
 
 // (4) Scrivere posizione "umana" della lista in base a dove si trova il nuovo utente.
+
+for( var i = 0; i < cognomi.length; i++ ){
+  if(cognomi[i] == cognomeUtente) {
+   document.getElementById("cognome-inserito").innerHTML = i + 1;
+  }
+}
