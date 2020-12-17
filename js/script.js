@@ -11,7 +11,7 @@
 var cognomeUtente = prompt('Inserisci il tuo cognome:');
 
 // (2) Creare array con altri cognomi ed inserire quello dell'utente.
-var cognomi = ['Rossi', 'Immobile', 'Ronaldo', 'Maldini'];
+var cognomi = ['Rossi', 'Aquilani', 'Immobile', 'Ronaldo', 'Maldini'];
 
 cognomi.push(cognomeUtente);
 
@@ -21,3 +21,5 @@ cognomi.push(cognomeUtente);
 cognomi.sort();
 
 console.log(cognomi);
+
+// (4) Scrivere posizione "umana" della lista in base a dove si trova il nuovo utente.
