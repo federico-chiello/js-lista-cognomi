@@ -15,4 +15,9 @@ var cognomi = ['Rossi', 'Immobile', 'Ronaldo', 'Maldini'];
 
 cognomi.push(cognomeUtente);
 
+// console.log(cognomi);
+
+// (3) Stampare lista in ordine alfabetico.
+cognomi.sort();
+
 console.log(cognomi);
