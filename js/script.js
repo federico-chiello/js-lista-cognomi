@@ -9,9 +9,9 @@
 
 // (1) Chiedere cognome.
 var cognomeUtente = prompt('Inserisci il tuo cognome:');
-var iniziale = cognomeUtente.charAt(0).toUpperCase();
-var restoDelNome = cognomeUtente.substring(1).toLowerCase();
-cognomeUtente = iniziale + restoDelNome;
+var letteraIniziale = cognomeUtente.charAt(0).toUpperCase();
+var restoNome = cognomeUtente.substring(1).toLowerCase();
+cognomeUtente = letteraIniziale + restoNome;
 
 // (2) Creare array con altri cognomi ed inserire quello dell'utente.
 var cognomi = ['Rossi', 'Aquilani', 'Immobile', 'Ronaldo', 'Maldini'];
