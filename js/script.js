@@ -24,11 +24,16 @@ cognomi.push(cognomeUtente);
 cognomi.sort();
 
 console.log(cognomi);
+document.getElementById("lista-cognomi").innerHTML = cognomi
 
 // (4) Scrivere posizione "umana" della lista in base a dove si trova il nuovo utente.
 
-for( var i = 0; i < cognomi.length; i++ ){
-  if(cognomi[i] == cognomeUtente) {
-   document.getElementById("cognome-inserito").innerHTML = i + 1;
-  }
-}
+// **** Primo metodo
+// for( var i = 0; i < cognomi.length; i++ ){
+//   if(cognomi[i] == cognomeUtente) {
+//    document.getElementById("cognome-inserito").innerHTML += i + 1;
+//   }
+// }
+
+// **** Secondo metodo
+document.getElementById("cognome-inserito").innerHTML += cognomi.indexOf(cognomeUtente) + 1;
